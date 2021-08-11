@@ -8,6 +8,7 @@ arch=(any)
 url='https://www.pling.com/p/1307493/'
 license=('CC BY-NC-ND 4.0')
 source=(${pkgname}::"git+https://github.com/MMcQueenGNU/$pkgname")
+#https://github.com/User/repo/archive/master.tar.gz
 #source=("$pkgname-$pkgver.tar.gz::https://github.com/coder/program/archive/v$pkgver.tar.gz")
 #source=("${pkgname}-${pkgver}.tar.gz::https://github.com/joaopedroaats/azeny-plank/archive/v${pkgver}.tar.gz")
 md5sums=('skip')
