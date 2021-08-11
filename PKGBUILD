@@ -12,7 +12,7 @@ md5sums=('skip')
 
 package() {
 
-	cd "$srcdir/$pkgname-$pkgver/"
+	cd "$srcdir/$pkgname-$pkgver/$_pkgname"
 
 	# Creating needed directories
 	install -dm755 "${pkgdir}/usr/share/backgrounds/$_pkgname/"
@@ -20,6 +20,6 @@ package() {
 	# Wallpapers
 	local wallpaper
 	for wallpaper in *; do
-		install -m755 "$srcdir/$pkgname-$pkgver/${wallpaper}" "$pkgdir/usr/share/backgrounds/_pkgname/${wallpaper}"
+		install -m755 "$srcdir/$pkgname-$pkgver/$_pkgname/${wallpaper}" "$pkgdir/usr/share/backgrounds/$_pkgname/${wallpaper}"
 	done
 }
