@@ -7,12 +7,12 @@ pkgdesc='Collection of Simplicity Edition Wallpapers Themed for XFCE'
 arch=(any)
 url='https://www.pling.com/p/1307493/'
 license=('CC BY-NC-ND 4.0')
-source=("https://github.com/MMcQueenGNU/$pkgname/releases/download/$pkgver/$pkgname-$pkgver.tar.xz")
+source=(${pkgname}::"git+https://github.com/MMcQueenGNU/$pkgname")
 md5sums=('skip')
 
 package() {
 
-	cd "$srcdir/$pkgname-$pkgver/$_pkgname"
+	cd "$srcdir/$pkgname/$_pkgname"
 
 	# Creating needed directories
 	install -dm755 "${pkgdir}/usr/share/backgrounds/$_pkgname/"
