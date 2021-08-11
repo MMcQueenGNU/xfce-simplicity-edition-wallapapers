@@ -28,6 +28,6 @@ package() {
 	# Wallpapers
 	local wallpaper
 	for wallpaper in *; do
-		install -m755 "$srcdir/$pkgname-$pkgver/$_pkgname/${wallpaper}" "$pkgdir/usr/share/backgrounds/$_pkgname/${wallpaper}"
+		install -m755 "$srcdir/$pkgname-$_pkgname/${wallpaper}" "$pkgdir/usr/share/backgrounds/$_pkgname/${wallpaper}"
 	done
 }
