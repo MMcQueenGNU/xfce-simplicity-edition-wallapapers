@@ -14,6 +14,8 @@ source=("https://github.com/MMcQueenGNU/$pkgname/$pkgname.tar.gz")
 #source=("$pkgname-$pkgver.tar.gz::https://github.com/coder/program/archive/v$pkgver.tar.gz")
 #source=("${pkgname}-${pkgver}.tar.gz::https://github.com/joaopedroaats/azeny-plank/archive/v${pkgver}.tar.gz")
 #source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jtsiomb/xlivebg/archive/v${pkgver}.tar.gz")
+#  cd "${pkgname}-${pkgver}"
+#https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=xlivebg
 md5sums=('skip')
 
 package() {
